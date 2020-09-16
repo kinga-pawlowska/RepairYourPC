@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/image1">
+
+    <TextView
+        android:text="@string/welcome_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMainWelcomeInformation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMainAppName"
+        android:textColor="@android:color/holo_orange_light"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_below="@+id/tvMainWelcomeInformation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:text="@string/login_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMainLoginInstruction"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tvMainAppName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginText"
+        android:id="@+id/tvMainLogin"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_below="@+id/tvMainLoginInstruction"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etMainPassword"
+        android:background="@color/editTextAlphaWhite"
+        android:layout_below="@+id/tvMainPassword"
+        android:layout_alignLeft="@+id/tvMainPassword"
+        android:layout_alignStart="@+id/tvMainPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passwordText"
+        android:id="@+id/tvMainPassword"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_below="@+id/etMainLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMainLogin"
+        android:background="@color/editTextAlphaWhite"
+        android:layout_below="@+id/tvMainLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/btnMainLogin"
+        android:layout_below="@+id/etMainPassword"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_instruction"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:id="@+id/tvMainRegistrationInstruction"
+        android:textAlignment="center"
+        android:layout_below="@+id/btnMainLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_button"
+        android:id="@+id/btnMainRegister"
+        android:layout_below="@+id/tvMainRegistrationInstruction"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

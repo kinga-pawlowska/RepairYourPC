@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="loginListViewColor">#80ffc400</color>
+    <color name="editTextAlphaWhite">#80ffffff</color>
+    <color name="editTextAlphaBlack">#b4000000</color>
+</resources>

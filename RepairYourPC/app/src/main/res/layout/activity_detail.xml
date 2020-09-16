@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kingapawlowska.com.repairyourpc.DetailActivity"
+    android:background="@drawable/image3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:text="@string/btnRegOrdBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDetBack"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="@string/tvDetRepairIdentifierText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetRepairIdentifierText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp"
+                android:layout_below="@+id/btnDetBack"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetRepairIdentifier"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetRepairIdentifier"
+                android:layout_below="@+id/tvDetRepairIdentifierText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="@string/tvDetRepairStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetRepairStatusText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetRepairStatus"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetRepairStatus"
+                android:layout_below="@+id/tvDetRepairIdentifierText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="@string/tvDetEstimatedCostText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetEstimatedCostText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetEstimatedCost"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetEstimatedCost"
+                android:layout_below="@+id/tvDetRepairIdentifierText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/tvDetPaidText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDetPaidText"
+                    android:textStyle="normal|bold"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="24sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/btnDetPay"
+                    android:layout_toStartOf="@+id/btnDetPay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDetPaid"
+                    android:textStyle="normal|bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:text="@string/tvDetPaid"
+                    android:layout_below="@+id/tvDetPaidText"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/btnDetPay"
+                    android:layout_toStartOf="@+id/btnDetPay" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay"
+                    android:textSize="24sp"
+                    android:id="@+id/btnDetPay"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@+id/tvDetPaid" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDetResponse"
+                    android:layout_below="@+id/tvDetPaid"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:background="@android:color/holo_orange_light"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:text="RESPONSE" />
+            </RelativeLayout>
+
+            <TextView
+                android:text="@string/tvDetManufacturerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetManufacturerText"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_search_url_text_normal"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetManufacturer"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetManufacturer"
+                android:layout_below="@+id/tvDetRepairIdentifierText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="@string/tvDetKindOfHardwareText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetKindOfHardwareText"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_search_url_text_normal"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetKindOfHardware"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetKindOfHardware"
+                android:layout_below="@+id/tvDetRepairIdentifierText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="@string/tvDetModelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetModelText"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_search_url_text_normal"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetModel"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetModel"
+                android:layout_below="@+id/tvDetRepairIdentifierText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="@string/tvDetServiceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetServiceText"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_search_url_text_normal"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetService"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetService"
+                android:layout_below="@+id/tvDetRepairIdentifierText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="@string/tvDetOperatingSystemText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetOperatingSystemText"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_search_url_text_normal"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetOperatingSystem"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetOperatingSystem"
+                android:layout_below="@+id/tvDetRepairIdentifierText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="@string/tvDetDescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetDescriptionText"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_search_url_text_normal"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetDescription"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetDescription"
+                android:layout_below="@+id/tvDetDescriptionText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="@string/tvDetLinkText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetLinkText"
+                android:textStyle="normal|bold"
+                android:textColor="@color/abc_search_url_text_normal"
+                android:textSize="24sp"
+                android:layout_below="@+id/tvDetRepairIdentifier"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetLink"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvDetLink"
+                android:layout_below="@+id/tvDetDescriptionText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:text="@string/btnDetRemoveOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnDetRemoveOrder" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

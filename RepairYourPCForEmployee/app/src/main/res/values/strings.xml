@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">RepairYourPC For Employee</string>
+    <string name="tvMainAllOrdersText">All orders:</string>
+    <string name="btnMainRefresh">Refresh</string>
+    <string name="tvListNoOrders">No orders</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="btnDetBack">Back</string>
+    <string name="tvDetRepairIdentifierText">Repair identifier:</string>
+    <string name="tvDetDescriptionText">Description:</string>
+    <string name="tvDetDescription">\???</string>
+    <string name="tvDetRepairIdentifier">\???</string>
+    <string name="btnDetRemoveOrder">Remove order</string>
+    <string name="tvDetRepairStatusText">Repair status:</string>
+    <string name="tvDetRepairStatus">\???</string>
+    <string name="tvDetEstimatedCostText">Estimated cost:</string>
+    <string name="tvDetEstimatedCost">\???</string>
+    <string name="tvDetPaidText">Paid:</string>
+    <string name="tvDetPaid">\???</string>
+    <string name="tvDetManufacturerText">Manufacturer:</string>
+    <string name="tvDetManufacturer">\???</string>
+    <string name="tvDetKindOfHardwareText">Kind of hardware:</string>
+    <string name="tvDetKindOfHardware">\???</string>
+    <string name="tvDetModelText">Type / model:</string>
+    <string name="tvDetModel">\???</string>
+    <string name="tvDetServiceText">Service:</string>
+    <string name="tvDetService">\???</string>
+    <string name="tvDetOperatingSystemText">Operating system:</string>
+    <string name="tvDetOperatingSystem">\???</string>
+    <string name="tvDetLinkText">Link:</string>
+    <string name="tvDetLink">\???</string>
+    <string name="btnDetClientInfo">Client info</string>
+    <string name="btnDetChange">Change status/cost/paid</string>
+    <string name="title_activity_change">ChangeActivity</string>
+    <string name="btnChaBack">Back</string>
+    <string name="tvChaRepairStatusText">Repair status:</string>
+    <string name="tvChaEstimatedCostText">Estimated cost:</string>
+    <string name="tvChaPaidText">Paid:</string>
+    <string name="btnChaUpdate">Update</string>
+    <string name="etChaEstimatedCost">0 PLN</string>
+    <string name="btnDetRefresh">Refresh</string>
+    <string name="tvListCreatedAt">\???</string>
+    <string name="tvListUpdatedAt">\???</string>
+
+    <string-array name="Array_spinChaRepairStatus">
+        <item>PENDING</item>
+        <item>IN PROCESS</item>
+        <item>FINISHED</item>
+        <item>CANCELLED</item>
+    </string-array>
+
+    <string-array name="Array_spinChaPaid">
+        <item>NO</item>
+        <item>YES</item>
+
+    </string-array>
+    <string name="title_activity_client_info">ClientInfoActivity</string>
+    <string name="btnCliBack">Back</string>
+    <string name="tvCliLogin">Login:</string>
+    <string name="tvCliEmail">Email:</string>
+    <string name="tvCliFirstName">First Name:</string>
+    <string name="tvCliLastName">Last Name:</string>
+    <string name="tvCliStreetName">Street Name:</string>
+    <string name="tvCliStreetNumber">Street Number:</string>
+    <string name="tvCliZipCode">Zip Code:</string>
+    <string name="tvCliCity">City:</string>
+    <string name="tvCliPhoneNumber">Phone Number:</string>
+    <string name="btnCliCallText">CALL</string>
+
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_client_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kingapawlowska.com.repairyourpcforemployee.ClientInfoActivity"
+    android:background="@drawable/image5">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="@string/btnCliBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCliBack"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:text="@string/tvCliLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliLoginText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliLogin"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliLogin" />
+
+            <TextView
+                android:text="@string/tvCliEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliEmailText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliEmail"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliEmail" />
+
+            <TextView
+                android:text="@string/tvCliFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliFirstNameText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliFirstName"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliFirstName" />
+
+            <TextView
+                android:text="@string/tvCliLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliLastNameText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliLastName"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliLastName" />
+
+            <TextView
+                android:text="@string/tvCliStreetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliStreetNameText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliStreetName"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliStreetName" />
+
+            <TextView
+                android:text="@string/tvCliStreetNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliStreetNumberText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliStreetNumber"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliStreetNumber" />
+
+            <TextView
+                android:text="@string/tvCliZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliZipCodeText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliZipCode"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliZipCode" />
+
+            <TextView
+                android:text="@string/tvCliCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliCityText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliCity"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliCity" />
+
+            <TextView
+                android:text="@string/tvCliPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliPhoneNumberText"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCliPhoneNumber"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:text="@string/tvCliPhoneNumber" />
+
+            <Button
+                android:id="@+id/btnCliCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnCliCallText"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

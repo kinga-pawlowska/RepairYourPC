@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:clickable="false"
+    android:textIsSelectable="false"
+    android:background="@color/editTextAlphaBlack">
+
+    <TextView
+        android:text="@string/tvListNoOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tvListRepairIdentifier"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/tvListNumber"
+        android:layout_toEndOf="@+id/tvListNumber"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvListRepairIdentifier"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvListCreatedAt"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvListRepairIdentifier"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvListUpdatedAt"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
